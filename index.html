@@ -8,6 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" type="text/css" href="https://nafezly.com/css/cust-fonts.css">
     <link rel="stylesheet" type="text/css" href="https://nafezly.com/css/fontawsome.min.css">
     <title>Hello, world!</title>
@@ -23,15 +27,21 @@
       .nav-menu.active{
         transform: skewX(10deg) translate(0, 0)!important;
       }
-      .nav-menu ul li{
+      .nav-menu ul li {
         font-size: 1.3rem;
         padding: 10px 0px;
         border-bottom: 6px solid transparent;
         transition: .3s all ease-in-out;
         cursor: pointer;
       }
+       .nav-menu ul li *{
+        transition: .3s all ease-in-out;
+       }
       .nav-menu ul li:hover{
         border-bottom: 6px solid #2196f3!important;
+        color: #2196f3!important;
+      }
+      .nav-menu ul li:hover *{ 
         color: #2196f3!important;
       }
     </style>
@@ -46,15 +56,15 @@
           <div class="col-12 p-5">
             <!-- <h1 class="mb-5">مرحباً !</h1> -->
             
-            <ul style="    list-style-type: none;" class="p-0 col-12">
-              <li>الرئيسية</li>
-              <li>الخدمات</li>
-              <li>التواصل</li>
-              <li>عن الشركة</li>
-              <li>حقائق رائعة</li>
-              <li>فريق العمل</li>
-              <li>المدونة</li>
-              <li>عملائنا</li>
+            <ul style="    list-style-type: none;" class="p-0 col-12 animate__animated animate__fadeInRight ">
+              <li><span class="far fa-home"></span> الرئيسية</li>
+              <li><span class="far fa-boxes-alt"></span> الخدمات</li>
+              <li><span class="far fa-phone"></span> التواصل</li>
+              <li><span class="far fa-info-circle"></span> عن الشركة</li>
+              <li><span class="far fa-birthday-cake"></span> حقائق رائعة</li>
+              <li><span class="far fa-users-crown"></span> فريق العمل</li>
+              <li><span class="far fa-pencil"></span> المدونة</li>
+              <li><span class="far fa-user-tie"></span> عملائنا</li>
             </ul>
           </div>
         </div>
@@ -64,7 +74,7 @@
     
       <span class="fal fa-bars toggle-nav-menu" style="color: #fff;font-size: 2rem;cursor: pointer;position: absolute;top: 60px;right: 60px;"></span>
    
-    <div class="col-12 d-flex justify-content-center text-center" style="height: 100vh;align-items: center;color: #fff;font-size: 3rem;">
+    <div class="col-12 d-flex justify-content-center text-center animate__animated animate__fadeInDown" style="height: 100vh;align-items: center;color: #fff;font-size: 3rem;">
      
         مرحباً .. !
      
